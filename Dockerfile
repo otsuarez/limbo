@@ -1,6 +1,7 @@
 FROM gliderlabs/alpine:3.3
 
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ENV SLACK_TOKEN
 
 # get our basic-needs sorted
 RUN apk-install python3 python3-dev vim bash    \

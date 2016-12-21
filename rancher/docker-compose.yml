@@ -1,0 +1,9 @@
+ranchy:
+  image: otsuarez/limbo:0.0.4
+  environment:
+    - SLACK _TOKEN=$SLACK_TOKEN
+  labels:
+        io.rancher.container.dns: true
+        io.rancher.container.network: true
+  restart: unless-stopped
+  net: host
